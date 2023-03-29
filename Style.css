@@ -1,0 +1,163 @@
+/* Reset de estilos (lembrar de resetar page) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* usando alguns estilos do cabeçalho, foco para atendimento (intuito de usar cores azul e branca) */
+header {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 45px;
+}
+
+/* treinando estilos do conteúdo principal */
+.Apresentação {
+    background-color: #3498DB;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+
+}
+.Apresentação p {
+    margin-bottom: 25px;
+  }
+
+.Serviços {
+    background-color: #ECF0F1;
+    padding: 1px;
+    text-align: center;
+}
+
+.Serviços h3 {
+    margin-bottom: 1px;
+}
+
+.Serviço {
+    margin: 50px 20px;
+    padding: 1px;
+    text-align: center;
+}
+
+.Serviço i {
+    color: #3498DB;
+    font-size: 3rem;
+    margin-bottom: 1px;
+}
+
+.Comentarios {
+    background-color: #fff;
+    padding: 1px;
+    text-align: center;
+}
+
+.Comentarios h3 {
+    margin-bottom: 1px;
+}
+
+.Comentario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+    padding: 1px;
+    text-align: center;
+}
+
+.Comentario img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* estilos de botão (gostei) */
+.btn {
+    background-color: #fff;
+    color: #3498DB;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+.btn:hover {
+    background-color: #3498DB;
+    color: #fff;
+}
+
+/* Lembrar desses estilos de animação, para um futuro uso*/
+.Apresentação h2,
+.Serviços h3,
+.Comentarios h3 {
+    animation: fadeInUp 2s ease;
+}
+
+.Serviço i,
+.Comentarios img {
+    animation: pulse 2s ease infinite;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* estilos para responsividade */
+@media (max-width: 768px) {
+    .Serviços {
+        flex-direction: column;
+    }
+
+    .Serviço {
+        margin: 50px 0;
+    }
+
+    .Comentarios {
+        margin: 50px 0;
+    }
+}
